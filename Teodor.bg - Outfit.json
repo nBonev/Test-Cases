@@ -1,0 +1,1259 @@
+{
+   "suites":[
+      {
+         "id":9,
+         "title":"Outfit",
+         "description":null,
+         "preconditions":null,
+         "suites":[
+            
+         ],
+         "cases":[
+            {
+               "id":42,
+               "title":"Filtering \"Business suits\" (e.g beige suits, 44 size)",
+               "description":null,
+               "preconditions":"1\\. Go to https:\/\/teodor.bg\/\n\n2\\.The \u201cSuits\u201d page is loaded",
+               "postconditions":null,
+               "priority":"high",
+               "severity":"major",
+               "behavior":"positive",
+               "type":"functional",
+               "automation":"is-not-automated",
+               "status":"actual",
+               "milestone":null,
+               "custom_fields":[
+                  
+               ],
+               "steps":[
+                  {
+                     "position":1,
+                     "action":"Click on categories drop-down menu",
+                     "expected_result":"The drop down menu expands",
+                     "data":""
+                  },
+                  {
+                     "position":2,
+                     "action":"Select business suits",
+                     "expected_result":"The user is redirect successfully to \u201cBusiness Suits\u201d page",
+                     "data":""
+                  },
+                  {
+                     "position":3,
+                     "action":"Click on collor drop-down menu",
+                     "expected_result":"The drop down menu expands",
+                     "data":""
+                  },
+                  {
+                     "position":4,
+                     "action":"Select Beige collor",
+                     "expected_result":"The user is redirect successfully to \u201cBusiness Suits with beige collor\u201d page",
+                     "data":""
+                  },
+                  {
+                     "position":5,
+                     "action":"Click on size drop-down menu",
+                     "expected_result":"The drop down menu expands",
+                     "data":""
+                  },
+                  {
+                     "position":6,
+                     "action":"Select \u201c44\u201d size",
+                     "expected_result":"1\\.The user can see all results with beige suits with size \"44\".",
+                     "data":""
+                  }
+               ]
+            },
+            {
+               "id":97,
+               "title":"Filtering \"Business suits\" (e.g black suits, 64 size, regular fit)",
+               "description":null,
+               "preconditions":"1\\. Go to https:\/\/teodor.bg\/\n\n2\\.The \u201cSuits\u201d page is loaded",
+               "postconditions":null,
+               "priority":"high",
+               "severity":"major",
+               "behavior":"positive",
+               "type":"functional",
+               "automation":"is-not-automated",
+               "status":"actual",
+               "milestone":null,
+               "custom_fields":[
+                  
+               ],
+               "steps":[
+                  {
+                     "position":1,
+                     "action":"Click on categories drop-down menu",
+                     "expected_result":"The drop down menu expands",
+                     "data":""
+                  },
+                  {
+                     "position":2,
+                     "action":"Select business suits",
+                     "expected_result":"The user is redirect successfully to \u201cBusiness Suits\u201d page",
+                     "data":""
+                  },
+                  {
+                     "position":3,
+                     "action":"Click on collor drop-down menu",
+                     "expected_result":"The drop down menu expands",
+                     "data":""
+                  },
+                  {
+                     "position":4,
+                     "action":"Select Black collor",
+                     "expected_result":"The user is redirect successfully to \u201cBusiness Suits with black collor\u201d page",
+                     "data":""
+                  },
+                  {
+                     "position":5,
+                     "action":"Click on cut drop-down menu",
+                     "expected_result":"The drop down menu expands",
+                     "data":""
+                  },
+                  {
+                     "position":6,
+                     "action":"Select Regular fit",
+                     "expected_result":"The user is redirect successfully to \u201cBusness Suits wtih black collor and Regular fit\u201d page",
+                     "data":""
+                  },
+                  {
+                     "position":7,
+                     "action":"Select \u201c66\u201d size",
+                     "expected_result":"The user can see all results with black suits with size \"64\" and Regular fit.",
+                     "data":""
+                  }
+               ]
+            },
+            {
+               "id":98,
+               "title":"Testing that the user can filter \"Ceremonial Suits\" (e.g blue color, Slim fit, 56 size, tissue, price)",
+               "description":null,
+               "preconditions":"1\\. Go to https:\/\/teodor.bg\/\n\n2\\.The \u201cSuits\u201d page is loaded",
+               "postconditions":null,
+               "priority":"high",
+               "severity":"major",
+               "behavior":"positive",
+               "type":"functional",
+               "automation":"is-not-automated",
+               "status":"actual",
+               "milestone":null,
+               "custom_fields":[
+                  
+               ],
+               "steps":[
+                  {
+                     "position":1,
+                     "action":"Select \u201cCeremonial Suits\u201d from categories drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cCeremonial Suits\u201d",
+                     "data":""
+                  },
+                  {
+                     "position":2,
+                     "action":"Select Blue collor from color drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cCeremonial Suits\u201d with (blue color)",
+                     "data":""
+                  },
+                  {
+                     "position":3,
+                     "action":"Select Slim fit from cut drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cCeremonial Suits\u201d wtih (blue color and Slim fit)",
+                     "data":""
+                  },
+                  {
+                     "position":4,
+                     "action":"Select \u201c56\u201d size from Size drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cCeremonial suits\u201d with (blue color, Slim fit and 56 size)",
+                     "data":""
+                  },
+                  {
+                     "position":5,
+                     "action":"Select Wool from tissue drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cCeremonial suits\u201d with (blue color, Slim fit, 56 size, wool fabric)\u201d",
+                     "data":""
+                  },
+                  {
+                     "position":6,
+                     "action":"Select Price from BGN 200 to BGN 350",
+                     "expected_result":"1\\.The user is redirect successfully to  \u201cCeremonial suits\u201d with (blue collor, Slim fit, 56 size, wool fabric, price between BGN 200 and BGN 350).",
+                     "data":""
+                  }
+               ]
+            },
+            {
+               "id":43,
+               "title":"Filtering \"Vests\" (e.g brown color, size)",
+               "description":null,
+               "preconditions":"1\\. Go to https:\/\/teodor.bg\/\n\n2\\. The \u201cVests\u201d page is loaded",
+               "postconditions":null,
+               "priority":"high",
+               "severity":"major",
+               "behavior":"positive",
+               "type":"functional",
+               "automation":"is-not-automated",
+               "status":"actual",
+               "milestone":null,
+               "custom_fields":[
+                  
+               ],
+               "steps":[
+                  {
+                     "position":1,
+                     "action":"Click on color drop-down menu",
+                     "expected_result":"The drop-down menu expands",
+                     "data":""
+                  },
+                  {
+                     "position":2,
+                     "action":"Select Brown color",
+                     "expected_result":"The user is redirect successfully to \u201cVests\u201d with brown collor",
+                     "data":""
+                  },
+                  {
+                     "position":3,
+                     "action":"Click on size drop-down menu",
+                     "expected_result":"The drop-down menu expands",
+                     "data":""
+                  },
+                  {
+                     "position":4,
+                     "action":"Select \u201c46\u201d size",
+                     "expected_result":"The user is can see all results with Brown Vests and 46 size",
+                     "data":""
+                  }
+               ]
+            },
+            {
+               "id":99,
+               "title":"Filtering \"Vests\" (e.g black color, size, cut)",
+               "description":null,
+               "preconditions":"1\\. Go to https:\/\/teodor.bg\/\n\n2\\. The \u201cVests\u201d page is loaded",
+               "postconditions":null,
+               "priority":"high",
+               "severity":"major",
+               "behavior":"positive",
+               "type":"functional",
+               "automation":"is-not-automated",
+               "status":"actual",
+               "milestone":null,
+               "custom_fields":[
+                  
+               ],
+               "steps":[
+                  {
+                     "position":1,
+                     "action":"Click on color drop-down menu",
+                     "expected_result":"The drop-down menu expands",
+                     "data":""
+                  },
+                  {
+                     "position":2,
+                     "action":"Select Black color",
+                     "expected_result":"The user is redirect successfully to \u201cVests\u201d with black color",
+                     "data":""
+                  },
+                  {
+                     "position":3,
+                     "action":"Click on cut drop-down menu",
+                     "expected_result":"The drop-down menu expands",
+                     "data":""
+                  },
+                  {
+                     "position":4,
+                     "action":"Select Slim fit",
+                     "expected_result":"The user is redirect successfully to \u201cVests\u201d with black color and slim fit",
+                     "data":""
+                  },
+                  {
+                     "position":5,
+                     "action":"Click on size drop-down menu",
+                     "expected_result":"The drop down menu expands",
+                     "data":""
+                  },
+                  {
+                     "position":6,
+                     "action":"Select \u201c56\u201d size",
+                     "expected_result":"The user can see all results with Black \u201cVests\u201d (slim fit and 56 size).",
+                     "data":""
+                  }
+               ]
+            },
+            {
+               "id":100,
+               "title":"Testing of \"VestS\" filters (e.g tissue, price)",
+               "description":null,
+               "preconditions":"1\\. Go to https:\/\/teodor.bg\/\n\n2\\. The \u201cVests\u201d page is loaded",
+               "postconditions":null,
+               "priority":"high",
+               "severity":"major",
+               "behavior":"positive",
+               "type":"functional",
+               "automation":"is-not-automated",
+               "status":"draft",
+               "milestone":null,
+               "custom_fields":[
+                  
+               ],
+               "steps":[
+                  {
+                     "position":1,
+                     "action":"Click on tissue drop-down menu",
+                     "expected_result":"The drop-down menu expands",
+                     "data":""
+                  },
+                  {
+                     "position":2,
+                     "action":"Select wool fabric",
+                     "expected_result":"The user is redirect successfully to \u201cVests\u201d with wool fabric",
+                     "data":""
+                  },
+                  {
+                     "position":3,
+                     "action":"Select lower price from BGN 40",
+                     "expected_result":"The user is redirect successfully to  \u201cVests\u201d with wool fabric and price from BGN 40",
+                     "data":""
+                  },
+                  {
+                     "position":4,
+                     "action":"Select upper price to BGN 90",
+                     "expected_result":"The user can see all \u201cVests\u201d with wool fabric and price between BGN 40  and BGN 90",
+                     "data":""
+                  }
+               ]
+            },
+            {
+               "id":101,
+               "title":"Testing of \"Vests\" filters (e.g tissue, price BGN 20 - BGN 40)",
+               "description":null,
+               "preconditions":"1\\. Go to https:\/\/teodor.bg\/\n\n2\\. The \u201cVests\u201d page is loaded",
+               "postconditions":null,
+               "priority":"high",
+               "severity":"major",
+               "behavior":"positive",
+               "type":"functional",
+               "automation":"is-not-automated",
+               "status":"actual",
+               "milestone":null,
+               "custom_fields":[
+                  
+               ],
+               "steps":[
+                  {
+                     "position":1,
+                     "action":"Click on tissue drop-down menu",
+                     "expected_result":"The drop-down menu expands",
+                     "data":""
+                  },
+                  {
+                     "position":2,
+                     "action":"Select wool fabric",
+                     "expected_result":"The user is redirect successfully to \u201cVests\u201d with wool fabric",
+                     "data":""
+                  },
+                  {
+                     "position":3,
+                     "action":"Select lower price from BGN 20",
+                     "expected_result":"The user is redirect successfully to  \u201cVests\u201d with wool fabric and price from BGN 20",
+                     "data":""
+                  },
+                  {
+                     "position":4,
+                     "action":"Select upper price to BGN 40",
+                     "expected_result":"The user can see all \u201cVests\u201d with wool fabric and price between BGN 20  and BGN 40",
+                     "data":""
+                  }
+               ]
+            },
+            {
+               "id":44,
+               "title":"Testing of \"Pants\" filters (e.g \"italian pocet\", beige color, slim fit, 44 size, price 35-60 BGN)",
+               "description":null,
+               "preconditions":"1\\. Go to https:\/\/teodor.bg\/\n\n2\\. The \u201cPants\u201d page is loaded",
+               "postconditions":null,
+               "priority":"high",
+               "severity":"major",
+               "behavior":"positive",
+               "type":"functional",
+               "automation":"is-not-automated",
+               "status":"actual",
+               "milestone":null,
+               "custom_fields":[
+                  
+               ],
+               "steps":[
+                  {
+                     "position":1,
+                     "action":"Select \u201cPants italian pocet\u201d from categories drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cPants italian pocet\u201d",
+                     "data":""
+                  },
+                  {
+                     "position":2,
+                     "action":"Select beige color from color drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cPants italian pocet\u201d with (beige color)",
+                     "data":""
+                  },
+                  {
+                     "position":3,
+                     "action":"Select slim fit from cut drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cPants italian pocet\u201dwith (beige color and slim fit)",
+                     "data":""
+                  },
+                  {
+                     "position":4,
+                     "action":"Select \u201c44\u201d size from Size drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cPants italian pocet\u201dwith (beige color, slim fit, 44 size)",
+                     "data":""
+                  },
+                  {
+                     "position":5,
+                     "action":"Select Price from BGN 35 to BGN 60",
+                     "expected_result":"The user can see all results with \"Pants italian pocet\" with all applied filters",
+                     "data":""
+                  }
+               ]
+            },
+            {
+               "id":102,
+               "title":"Testing of \"Pants\" filters (e.g \"Five pocets\", black color, 42 size, price 29-75 BGN)",
+               "description":null,
+               "preconditions":"1\\. Go to https:\/\/teodor.bg\/\n\n2\\. The \u201cPants\u201d page is loaded",
+               "postconditions":null,
+               "priority":"high",
+               "severity":"major",
+               "behavior":"positive",
+               "type":"functional",
+               "automation":"is-not-automated",
+               "status":"actual",
+               "milestone":null,
+               "custom_fields":[
+                  
+               ],
+               "steps":[
+                  {
+                     "position":1,
+                     "action":"Select \u201cPants five pocets\u201d from categories drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cPants five pocets\u201d",
+                     "data":""
+                  },
+                  {
+                     "position":2,
+                     "action":"Select black color from color drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cPants five pocets\u201d with (black color)",
+                     "data":""
+                  },
+                  {
+                     "position":3,
+                     "action":"Select \u201c42\u201d size from Size drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cPants five pocets \u201dwith (beige color, 42 size)",
+                     "data":""
+                  },
+                  {
+                     "position":4,
+                     "action":"Select Price from BGN 29 to BGN 75",
+                     "expected_result":"The user can see all results with \"Pants five pocets\" with all applied filters",
+                     "data":""
+                  }
+               ]
+            },
+            {
+               "id":45,
+               "title":"Filtering \"T-Shirts\"(e.g \"t-shirts with collar\", purple color, urban fit, 3XL size, price 60-65 BGN)",
+               "description":null,
+               "preconditions":"1\\. Go to https:\/\/teodor.bg\/\n\n2\\. The \u201cT-Shirt\u201d page is loaded",
+               "postconditions":null,
+               "priority":"high",
+               "severity":"major",
+               "behavior":"negative",
+               "type":"functional",
+               "automation":"is-not-automated",
+               "status":"actual",
+               "milestone":null,
+               "custom_fields":[
+                  
+               ],
+               "steps":[
+                  {
+                     "position":1,
+                     "action":"Select \u201cT-shirts with collar\u201d from categories drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cT-shirts with collar\u201d",
+                     "data":""
+                  },
+                  {
+                     "position":2,
+                     "action":"Select Purple color from Color drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cT-Shirts with collar\u201d  with (purple color)",
+                     "data":""
+                  },
+                  {
+                     "position":3,
+                     "action":"Select Urban fit from Cut drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cT-Shirts with collar\u201d  with (purple color and Urban fit)",
+                     "data":""
+                  },
+                  {
+                     "position":4,
+                     "action":"Select \u201c3XL\u201d size from Size drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cT-Shirts with collar\u201d  with (purple color, urban fit, 3XL size)",
+                     "data":""
+                  },
+                  {
+                     "position":5,
+                     "action":"Select Price fom BGN 60 to BGN 65",
+                     "expected_result":"The user receives a message (We cannot find products matching the selection).",
+                     "data":""
+                  }
+               ]
+            },
+            {
+               "id":103,
+               "title":"Filtering \"T-Shirts\"(e.g \"t-shirts with neckline\", white color, regular fit, XL size, price 14-30 BGN)",
+               "description":null,
+               "preconditions":"1\\. Go to https:\/\/teodor.bg\/\n\n2\\. The \u201cT-Shirt\u201d page is loaded",
+               "postconditions":null,
+               "priority":"high",
+               "severity":"major",
+               "behavior":"positive",
+               "type":"functional",
+               "automation":"is-not-automated",
+               "status":"actual",
+               "milestone":null,
+               "custom_fields":[
+                  
+               ],
+               "steps":[
+                  {
+                     "position":1,
+                     "action":"Select \u201cT-shirts with neckline\u201d from categories drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cT-shirts with neckline\u201d",
+                     "data":""
+                  },
+                  {
+                     "position":2,
+                     "action":"Select White color from Color drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cT-Shirts with neckline\u201d with (white color)",
+                     "data":""
+                  },
+                  {
+                     "position":3,
+                     "action":"Select Regular fit from Cut drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cT-Shirts with neckline\u201d with (white color and Regular fit)",
+                     "data":""
+                  },
+                  {
+                     "position":4,
+                     "action":"Select \u201cXL\u201d size from Size drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cT-Shirts with neckline\u201d with (white color, regular fit, XL size)",
+                     "data":""
+                  },
+                  {
+                     "position":5,
+                     "action":"Select Price fom BGN 14 to BGN 30",
+                     "expected_result":"The user can see all results with \"T-Shirts with neckline\" with all applied filters (white color, regular fit, XL size, price from 14 to 30 BGN)",
+                     "data":""
+                  }
+               ]
+            },
+            {
+               "id":46,
+               "title":"Testing of \"Outfits and Sweatshirts\" filters (e.g multicolored, S size, price 35-80 BGN)",
+               "description":null,
+               "preconditions":"1\\. Go to https:\/\/teodor.bg\/\n\n2\\. The \"Outfits and Sweatshirts\" page is loaded",
+               "postconditions":null,
+               "priority":"high",
+               "severity":"major",
+               "behavior":"positive",
+               "type":"functional",
+               "automation":"is-not-automated",
+               "status":"actual",
+               "milestone":null,
+               "custom_fields":[
+                  
+               ],
+               "steps":[
+                  {
+                     "position":1,
+                     "action":"Select \u201cMulticolored\u201d from Color drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cOutfits and Sweatshirts\u201d with (multicolored)",
+                     "data":""
+                  },
+                  {
+                     "position":2,
+                     "action":"Select \u201cS\u201d size from Size drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cOutfits and Sweatshirts\u201d  with (multicolored, S size)",
+                     "data":""
+                  },
+                  {
+                     "position":3,
+                     "action":"Select lower price from BGN 35",
+                     "expected_result":"The user is redirect successfully to \u201cOutfits and Sweatshirts\u201d  with (multicolored, S size and Price from BGN 35)",
+                     "data":""
+                  },
+                  {
+                     "position":4,
+                     "action":"Select upper price to BGN 80",
+                     "expected_result":"The user can see all  \u201cOutfits and Sweatshirts\u201d with ( multicolored, S size and Price between BGN 35 and BGN 80).",
+                     "data":""
+                  }
+               ]
+            },
+            {
+               "id":104,
+               "title":"\"Outfits and Sweatshirts\" filters (e.g black color, M size, price 70-101 BGN)",
+               "description":null,
+               "preconditions":"1\\. Go to https:\/\/teodor.bg\/\n\n2\\. The \"Outfits and Sweatshirts\" page is loaded",
+               "postconditions":null,
+               "priority":"high",
+               "severity":"major",
+               "behavior":"negative",
+               "type":"functional",
+               "automation":"is-not-automated",
+               "status":"actual",
+               "milestone":null,
+               "custom_fields":[
+                  
+               ],
+               "steps":[
+                  {
+                     "position":1,
+                     "action":"Select \u201cBlack color\u201d from Color drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cOutfits and Sweatshirts\u201d with (black color)",
+                     "data":""
+                  },
+                  {
+                     "position":2,
+                     "action":"Select \u201cM\u201d size from Size drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cOutfits and Sweatshirts\u201d  with (black color, M size)",
+                     "data":""
+                  },
+                  {
+                     "position":3,
+                     "action":"Select lower price from BGN 70",
+                     "expected_result":"The user is redirect successfully to \u201cOutfits and Sweatshirts\u201d  with (black color, M size and Price from BGN 70)",
+                     "data":""
+                  },
+                  {
+                     "position":4,
+                     "action":"Select upper price to BGN 101",
+                     "expected_result":"The user receives a message (We cannot find products matching the selection).",
+                     "data":""
+                  }
+               ]
+            },
+            {
+               "id":47,
+               "title":"\"Waistcoat\" filters (e.g blue color, 4XL size, wool fabric, price 44-79 BGN)",
+               "description":null,
+               "preconditions":"1\\. Go to https:\/\/teodor.bg\/\n\n2\\. The \"Waistcoat\" page is loaded",
+               "postconditions":null,
+               "priority":"high",
+               "severity":"major",
+               "behavior":"positive",
+               "type":"functional",
+               "automation":"is-not-automated",
+               "status":"actual",
+               "milestone":null,
+               "custom_fields":[
+                  
+               ],
+               "steps":[
+                  {
+                     "position":1,
+                     "action":"Select Blue color from Color drop-down menu",
+                     "expected_result":"The user is redirect successfully to \"Waistcoat\" with (blue color)",
+                     "data":""
+                  },
+                  {
+                     "position":2,
+                     "action":"Select \u201c4XL\u201d size from Size drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cWaistcoat\u201d with (blue color, 4XL size)",
+                     "data":""
+                  },
+                  {
+                     "position":3,
+                     "action":"Select Wool fabric  from tissue drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cWaistcoat\u201d with (blue color, 4XL size,wool fabric)",
+                     "data":""
+                  },
+                  {
+                     "position":4,
+                     "action":"Select lower price from BGN 44",
+                     "expected_result":"The user is redirect successfully to \u201cWaistcoat\u201d with (blue color, 4XL size,wool fabric and price from BGN 44)",
+                     "data":""
+                  },
+                  {
+                     "position":5,
+                     "action":"Select upper price to BGN 79",
+                     "expected_result":"The user can see all \u201cWaistcoat\u201d with (blue color, 4XL size, wool fabric, price between BGN 44 and BGN 79)",
+                     "data":""
+                  }
+               ]
+            },
+            {
+               "id":48,
+               "title":"Testing of\"Coats\" filters (e.g gray color, 60 size, price 50-200 BGN)",
+               "description":null,
+               "preconditions":"1\\. Go to https:\/\/teodor.bg\/\n\n2\\. The \u201cCoats\u201d page is loaded",
+               "postconditions":null,
+               "priority":"high",
+               "severity":"major",
+               "behavior":"positive",
+               "type":"functional",
+               "automation":"is-not-automated",
+               "status":"actual",
+               "milestone":null,
+               "custom_fields":[
+                  
+               ],
+               "steps":[
+                  {
+                     "position":1,
+                     "action":"Select Gray color from Color drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cCoats\u201d with (gray color)",
+                     "data":""
+                  },
+                  {
+                     "position":2,
+                     "action":"Select \u201c60\u201d size from Size drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cCoats\u201d with (gray color and 60 size)",
+                     "data":""
+                  },
+                  {
+                     "position":3,
+                     "action":"Select lower pice from BGN 50",
+                     "expected_result":"The user is redirect successfully to \u201cCoats\u201d with (gray color, 60 size and price from BGN 50)",
+                     "data":""
+                  },
+                  {
+                     "position":4,
+                     "action":"Select upper price to BGN 200",
+                     "expected_result":"The user can see all \u201cCoats\u201d with (gray color, 60 size and price between BGN 50 and BGN 200)",
+                     "data":""
+                  }
+               ]
+            },
+            {
+               "id":49,
+               "title":"Testing of\"Blazers\" filters (e.g beige,red colors, slim fit, 46 size, cotton, price 80-159 BGN)",
+               "description":null,
+               "preconditions":"1\\. Go to https:\/\/teodor.bg\/\n\n2\\. The \u201cBlazers\u201d page is loaded",
+               "postconditions":null,
+               "priority":"high",
+               "severity":"major",
+               "behavior":"positive",
+               "type":"functional",
+               "automation":"is-not-automated",
+               "status":"actual",
+               "milestone":null,
+               "custom_fields":[
+                  
+               ],
+               "steps":[
+                  {
+                     "position":1,
+                     "action":"Select Beige color from Color drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cBlazers\u201d with (beige color)",
+                     "data":""
+                  },
+                  {
+                     "position":2,
+                     "action":"Select Red color drom Color drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cBlazers\u201d with (beige and red colors)",
+                     "data":""
+                  },
+                  {
+                     "position":3,
+                     "action":"Select Slim fit from Cut drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cBlazers\u201d with (beige and red colors, slim fit)",
+                     "data":""
+                  },
+                  {
+                     "position":4,
+                     "action":"Select \u201c46\u201d size from Size drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cBlazers\u201d with (beige and red colors, slim fit, 46 size)",
+                     "data":""
+                  },
+                  {
+                     "position":5,
+                     "action":"Select Cotton from Tissue dro-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cBlazers\u201d with (beige and red colors, slim fit, 46 size, cotton)",
+                     "data":""
+                  },
+                  {
+                     "position":6,
+                     "action":"Select Price from BGN 80 to BGN 159",
+                     "expected_result":"The user can see all \u201cBlazers\u201d with(beige and red colors, slim fit, 46 size, cotton, price between BGN 80 and BGN 159)",
+                     "data":""
+                  }
+               ]
+            },
+            {
+               "id":50,
+               "title":"\"Official Shirts\" filters(e.g  white color, slim fit, XS size, price 45-80 BGN)",
+               "description":null,
+               "preconditions":"1\\. Go to https:\/\/teodor.bg\/\n\n2\\. The \u201cShirts\u201d page is loaded",
+               "postconditions":null,
+               "priority":"high",
+               "severity":"major",
+               "behavior":"positive",
+               "type":"functional",
+               "automation":"is-not-automated",
+               "status":"actual",
+               "milestone":null,
+               "custom_fields":[
+                  
+               ],
+               "steps":[
+                  {
+                     "position":1,
+                     "action":"Select \u201cOfficial Shirts\u201d from categories dro-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cOfficial Shirts\u201d",
+                     "data":""
+                  },
+                  {
+                     "position":2,
+                     "action":"Select White color from Color drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cOfficial Shirts\u201d with (white color)",
+                     "data":""
+                  },
+                  {
+                     "position":3,
+                     "action":"Select Slim fit from Cut drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cOfficial Shirts\u201d with (white color, slim fit)",
+                     "data":""
+                  },
+                  {
+                     "position":4,
+                     "action":"Select XS size from Size drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cOfficial Shirts\u201d with (white color, slim fit, XS size)",
+                     "data":""
+                  },
+                  {
+                     "position":5,
+                     "action":"Select price from BGN 45 to BGN 80",
+                     "expected_result":"The user can see all \u201cOfficial Shirts\u201d with (white color,slim fit, XS size and price between BGN 45 and BGN 80)",
+                     "data":""
+                  }
+               ]
+            },
+            {
+               "id":105,
+               "title":"\"Casual Shirts\" filters(e.g  black color, regular fit, 4XL size, price 29-37 BGN)",
+               "description":null,
+               "preconditions":"1\\. Go to https:\/\/teodor.bg\/\n\n2\\. The \u201cShirts\u201d page is loaded",
+               "postconditions":null,
+               "priority":"high",
+               "severity":"major",
+               "behavior":"positive",
+               "type":"functional",
+               "automation":"is-not-automated",
+               "status":"actual",
+               "milestone":null,
+               "custom_fields":[
+                  
+               ],
+               "steps":[
+                  {
+                     "position":1,
+                     "action":"Select \u201cCasual Shirts\u201d from categories dro-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cCasual Shirts\u201d",
+                     "data":""
+                  },
+                  {
+                     "position":2,
+                     "action":"Select Black color from Color drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cCasual Shirts\u201d with (black color)",
+                     "data":""
+                  },
+                  {
+                     "position":3,
+                     "action":"Select Regular fit from Cut drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cCasual Shirts\u201d with (black color, regular fit)",
+                     "data":""
+                  },
+                  {
+                     "position":4,
+                     "action":"Select 4XL size from Size drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cCasual Shirts\u201d with (black color, regular fit, 4XL size)",
+                     "data":""
+                  },
+                  {
+                     "position":5,
+                     "action":"Select price from BGN 29 to BGN 37",
+                     "expected_result":"The user can see all \u201cCasual Shirts\u201d with (black color, regular fit, 4XL size and price between BGN 29 and BGN 37)",
+                     "data":""
+                  }
+               ]
+            },
+            {
+               "id":106,
+               "title":"\"Short-sleeved shirts\" filters(e.g  purple color, XL size, price 45-45 BGN)",
+               "description":null,
+               "preconditions":"1\\. Go to https:\/\/teodor.bg\/\n\n2\\. The \u201cShirts\u201d page is loaded",
+               "postconditions":null,
+               "priority":"high",
+               "severity":"major",
+               "behavior":"positive",
+               "type":"functional",
+               "automation":"is-not-automated",
+               "status":"actual",
+               "milestone":null,
+               "custom_fields":[
+                  
+               ],
+               "steps":[
+                  {
+                     "position":1,
+                     "action":"Select \"Short-sleeved shirts\" from categories dro-down menu",
+                     "expected_result":"The user is redirect successfully to \"Short-sleeved shirts\"",
+                     "data":""
+                  },
+                  {
+                     "position":2,
+                     "action":"Select Purple color from Color drop-down menu",
+                     "expected_result":"The user is redirect successfully to \"Short-sleeved shirts\" with (purple color)",
+                     "data":""
+                  },
+                  {
+                     "position":3,
+                     "action":"Select XL size from Size drop-down menu",
+                     "expected_result":"The user is redirect successfully to \"Short-sleeved shirts\" with (purple color, XL size)",
+                     "data":""
+                  },
+                  {
+                     "position":4,
+                     "action":"Select lower price from BGN 45",
+                     "expected_result":"The user is redirect successfully to \u201cShort-sleeved shirts\u201d with (purple color, XL size and price from BGN 45",
+                     "data":""
+                  },
+                  {
+                     "position":5,
+                     "action":"Select upper price to BGN 45",
+                     "expected_result":"The user receives a message (We cannot find products matching the selection).",
+                     "data":""
+                  }
+               ]
+            },
+            {
+               "id":51,
+               "title":"Testing of \"Jeans\" filters (e.g gray color, slim fit, 34 size, price 59-90 BGN)",
+               "description":null,
+               "preconditions":"1\\. Go to https:\/\/teodor.bg\/\n\n2\\. The \u201cJeans\u201d page is loaded",
+               "postconditions":null,
+               "priority":"high",
+               "severity":"major",
+               "behavior":"positive",
+               "type":"functional",
+               "automation":"is-not-automated",
+               "status":"actual",
+               "milestone":null,
+               "custom_fields":[
+                  
+               ],
+               "steps":[
+                  {
+                     "position":1,
+                     "action":"Select Gray color from Color drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cJeans\u201d with (gray color)",
+                     "data":""
+                  },
+                  {
+                     "position":2,
+                     "action":"Select Slim fit from Cut drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cJeans\u201d with (gray color, slim fit)",
+                     "data":""
+                  },
+                  {
+                     "position":3,
+                     "action":"Select \u201c34\u201d size from Size drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cJeans\u201d with (gray color, slim fit, 34 size)",
+                     "data":""
+                  },
+                  {
+                     "position":4,
+                     "action":"Select price from BGN 59 to BGN 90",
+                     "expected_result":"The user can see all \u201cJeans\u201d with (gray color, slim fit, 34 size and price between BGN 59 and BGN 90)",
+                     "data":""
+                  }
+               ]
+            },
+            {
+               "id":52,
+               "title":"\"Blouses with neckline\" filters(e.g green color, M size, price 33-40 BGN)",
+               "description":null,
+               "preconditions":"1\\. Go to https:\/\/teodor.bg\/\n\n2\\. The \"Blouses\" page is loaded",
+               "postconditions":null,
+               "priority":"high",
+               "severity":"major",
+               "behavior":"positive",
+               "type":"functional",
+               "automation":"is-not-automated",
+               "status":"actual",
+               "milestone":null,
+               "custom_fields":[
+                  
+               ],
+               "steps":[
+                  {
+                     "position":1,
+                     "action":"Select \"Blouses with neckline\" from categories drop-down menu",
+                     "expected_result":"The user is redirect successfully to \"Blouses with neckline\"",
+                     "data":""
+                  },
+                  {
+                     "position":2,
+                     "action":"Select Green color from Color drop-down menu",
+                     "expected_result":"The user is redirect successfully to \"Blouses with neckline\" with (green color)",
+                     "data":""
+                  },
+                  {
+                     "position":3,
+                     "action":"Select \u201cM\u201d size from Size drop-down menu",
+                     "expected_result":"The user is redirect successfully to \"Blouses with neckline\"with (green color, M size)",
+                     "data":""
+                  },
+                  {
+                     "position":4,
+                     "action":"Select price from BGN 33 to BGN 40",
+                     "expected_result":"The user can see all  \"Blouses with neckline\" with (green color, M size and price between BGN 33 and BGN 40)",
+                     "data":""
+                  }
+               ]
+            },
+            {
+               "id":53,
+               "title":"\"Sweaters\" filters (e.g beige color, S size, wool fabric, price 39-48 BGN)",
+               "description":null,
+               "preconditions":"1\\. Go to https:\/\/teodor.bg\/\n\n2\\. The \"Sweaters\" page is loaded",
+               "postconditions":null,
+               "priority":"high",
+               "severity":"major",
+               "behavior":"positive",
+               "type":"functional",
+               "automation":"is-not-automated",
+               "status":"actual",
+               "milestone":null,
+               "custom_fields":[
+                  
+               ],
+               "steps":[
+                  {
+                     "position":1,
+                     "action":"Select Beige color from Color drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cSweaters\u201d with (beige color)",
+                     "data":""
+                  },
+                  {
+                     "position":2,
+                     "action":"Select \u201cS\u201d size from Size drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cSweaters\u201d with (beige color, S size)",
+                     "data":""
+                  },
+                  {
+                     "position":3,
+                     "action":"Select Wool fabric from Tissue drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cSweaters\u201dwith (beige color, S size, wool fabric)",
+                     "data":""
+                  },
+                  {
+                     "position":4,
+                     "action":"Select lower price from BGN 39",
+                     "expected_result":"The user is redirect successfully to \u201cSweaters\u201d with (beige color, S size, wool fabric and price from BGN 39)",
+                     "data":""
+                  },
+                  {
+                     "position":5,
+                     "action":"Select upper price to BGN 48",
+                     "expected_result":"The user can see all \u201cSweaters\u201d with (beige color, S size, wool fabric and Price between BGN 39 and BGN 48)",
+                     "data":""
+                  }
+               ]
+            },
+            {
+               "id":54,
+               "title":"\"Jackets\" filters (e.g black color, regular fit, 64 size, price 0-0 BGN)",
+               "description":null,
+               "preconditions":"1\\. Go to https:\/\/teodor.bg\/\n\n2\\. The \"Jackets\" page is loaded",
+               "postconditions":null,
+               "priority":"high",
+               "severity":"major",
+               "behavior":"positive",
+               "type":"functional",
+               "automation":"is-not-automated",
+               "status":"actual",
+               "milestone":null,
+               "custom_fields":[
+                  
+               ],
+               "steps":[
+                  {
+                     "position":1,
+                     "action":"Select Black color from Color drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cJackets\u201d with (black color)",
+                     "data":""
+                  },
+                  {
+                     "position":2,
+                     "action":"Select Regular fit from Cut drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cJackets\u201d  with (black color, regular fit)",
+                     "data":""
+                  },
+                  {
+                     "position":3,
+                     "action":"Select \u201c64\u201d size from Size drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cJackets\u201d  with (black color, regular fit, 64 size)",
+                     "data":""
+                  },
+                  {
+                     "position":4,
+                     "action":"Select lower price from BGN 0",
+                     "expected_result":"The user is redirect successfully to \u201cJackets\u201d  with (black color, regular fit,size 64 and price from BGN 0)",
+                     "data":""
+                  },
+                  {
+                     "position":5,
+                     "action":"Select upper price to BGN 0",
+                     "expected_result":"The user receives a message (We cannot find products matching the selection).",
+                     "data":""
+                  }
+               ]
+            },
+            {
+               "id":55,
+               "title":"\"Denim Bermuda shorts\" filters (e.g beige color, slim fit, 33 size)",
+               "description":null,
+               "preconditions":"1\\. Go to https:\/\/teodor.bg\/\n\n2\\. The \u201cBermuda shorts\" page is loaded",
+               "postconditions":null,
+               "priority":"high",
+               "severity":"major",
+               "behavior":"positive",
+               "type":"functional",
+               "automation":"is-not-automated",
+               "status":"actual",
+               "milestone":null,
+               "custom_fields":[
+                  
+               ],
+               "steps":[
+                  {
+                     "position":1,
+                     "action":"Select \u201cDenim Bermuda shorts\u201d from categories drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cDenim Bermuda shorts\u201d",
+                     "data":""
+                  },
+                  {
+                     "position":2,
+                     "action":"Select Beige color from Color drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cDenim Bermuda shorts\u201d with(beige color)",
+                     "data":""
+                  },
+                  {
+                     "position":3,
+                     "action":"Select Slim fit from Cut drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cDenim Bermuda shorts\u201d with(beige color, slim fit)",
+                     "data":""
+                  },
+                  {
+                     "position":4,
+                     "action":"Select \u201c33\u201d size from size - jeans with five pockets",
+                     "expected_result":"The user can see all  \u201cDenim Bermuda shorts\u201d with(beige color, slim fit, 33 size)",
+                     "data":""
+                  }
+               ]
+            },
+            {
+               "id":107,
+               "title":"\"Bermuda shorts with five pockets\" filters (e.g yelow color, regular fit, 54 size)",
+               "description":null,
+               "preconditions":"1\\. Go to https:\/\/teodor.bg\/\n\n2\\. The \u201cBermuda shorts\" page is loaded",
+               "postconditions":null,
+               "priority":"high",
+               "severity":"major",
+               "behavior":"positive",
+               "type":"functional",
+               "automation":"is-not-automated",
+               "status":"actual",
+               "milestone":null,
+               "custom_fields":[
+                  
+               ],
+               "steps":[
+                  {
+                     "position":1,
+                     "action":"Select \u201cBermuda shorts with five pockets\u201d from categories drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cBermuda shorts with five pockets\u201d",
+                     "data":""
+                  },
+                  {
+                     "position":2,
+                     "action":"Select Yelow color from Color drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cBermuda shorts with five pockets\u201d with(yelow color)",
+                     "data":""
+                  },
+                  {
+                     "position":3,
+                     "action":"Select Regular fit from Cut drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cBermuda shorts with five pockets\u201d with(yelow color, regular fit)",
+                     "data":""
+                  },
+                  {
+                     "position":4,
+                     "action":"Select \u201c54\u201d size from size - jeans with five pockets",
+                     "expected_result":"The user can see all  \u201cBermuda shorts with five pockets\u201d with(yelow color, regular fit, 54 size)",
+                     "data":""
+                  }
+               ]
+            },
+            {
+               "id":108,
+               "title":"\"Bermuda shorts with italian pocket\" filters (e.g red color, slim fit, 60 size, price 52-63 BGN)",
+               "description":null,
+               "preconditions":"1\\. Go to https:\/\/teodor.bg\/\n\n2\\. The \u201cBermuda shorts\" page is loaded",
+               "postconditions":null,
+               "priority":"high",
+               "severity":"major",
+               "behavior":"positive",
+               "type":"functional",
+               "automation":"is-not-automated",
+               "status":"actual",
+               "milestone":null,
+               "custom_fields":[
+                  
+               ],
+               "steps":[
+                  {
+                     "position":1,
+                     "action":"Select \u201cBermuda shorts with italian pocket\u201d from categories drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cBermuda shorts with italian pocket\u201d",
+                     "data":""
+                  },
+                  {
+                     "position":2,
+                     "action":"Select Red color from Color drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cBermuda shorts with italian pocket\u201d with(red color)",
+                     "data":""
+                  },
+                  {
+                     "position":3,
+                     "action":"Select Slim fit from Cut drop-down menu",
+                     "expected_result":"The user is redirect successfully to \u201cBermuda shorts with italian pocket\u201d with(red color, slim fit)",
+                     "data":""
+                  },
+                  {
+                     "position":4,
+                     "action":"Select \u201c60\u201d size from Size drop-down menu",
+                     "expected_result":"The user is redirect successfully to  \u201cBermuda shorts with italian pocket\u201d with(red color, slim fit, 60 size)",
+                     "data":""
+                  },
+                  {
+                     "position":5,
+                     "action":"Select price from BGN 52 to BGN 63",
+                     "expected_result":"The user can see all \u201cBermuda shorts with italian pocket\u201d with (red color, slim fit, 60 size and price between BGN 52 and BGN 63)",
+                     "data":""
+                  }
+               ]
+            }
+         ]
+      }
+   ]
+}
