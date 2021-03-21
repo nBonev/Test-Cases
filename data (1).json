@@ -1,0 +1,571 @@
+{
+   "info":{
+      "_postman_id":"a1f5fc1a-e2e0-4159-8257-d5da20a97ba7",
+      "name":"Collection1",
+      "schema":"https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+   },
+   "item":[
+      {
+         "name":"GET",
+         "item":[
+            {
+               "name":"GET User",
+               "event":[
+                  {
+                     "listen":"test",
+                     "script":{
+                        "exec":[
+                           "console.log(\"Hello World..\");",
+                           "",
+                           "let URLVar = pm.variables.get(\"URL\");",
+                           "console.log(\"Value for URL variable is : \"+URLVar);",
+                           "",
+                           "pm.variables.set(\"name\",\"POSTMAN\");",
+                           "",
+                           "console.log(pm.variables.get(\"name\"));",
+                           "",
+                           "let globalVar = pm.globals.get(\"Env\");",
+                           "",
+                           "console.log(globalVar);"
+                        ],
+                        "type":"text/javascript"
+                     }
+                  }
+               ],
+               "request":{
+                  "method":"GET",
+                  "header":[
+                     
+                  ],
+                  "url":{
+                     "raw":"{{URL}}/api/users/2",
+                     "host":[
+                        "{{URL}}"
+                     ],
+                     "path":[
+                        "api",
+                        "users",
+                        "2"
+                     ]
+                  }
+               },
+               "response":[
+                  
+               ]
+            },
+            {
+               "name":"GET User List",
+               "event":[
+                  {
+                     "listen":"test",
+                     "script":{
+                        "exec":[
+                           "pm.test(\"Verify response time is less than 200ms\", function () {",
+                           "    pm.expect(pm.response.responseTime).to.be.below(200);",
+                           "});",
+                           "",
+                           "pm.test(\"Verify status code is 200\", function () {",
+                           "    pm.response.to.have.status(200);",
+                           "});"
+                        ],
+                        "type":"text/javascript"
+                     }
+                  }
+               ],
+               "request":{
+                  "method":"GET",
+                  "header":[
+                     
+                  ],
+                  "url":{
+                     "raw":"{{URL}}/api/users?page=2",
+                     "host":[
+                        "{{URL}}"
+                     ],
+                     "path":[
+                        "api",
+                        "users"
+                     ],
+                     "query":[
+                        {
+                           "key":"page",
+                           "value":"2"
+                        }
+                     ]
+                  }
+               },
+               "response":[
+                  
+               ]
+            },
+            {
+               "name":"ScriptsTest",
+               "event":[
+                  {
+                     "listen":"prerequest",
+                     "script":{
+                        "exec":[
+                           "pm.variables.get(\"variable_key\");",
+                           "pm.sendRequest(\"https://postman-echo.com/get\", function (err, response) {",
+                           "    console.log(response.json());",
+                           "});",
+                           "pm.environment.set(\"variable_key\", \"variable_value\");"
+                        ],
+                        "type":"text/javascript"
+                     }
+                  }
+               ],
+               "request":{
+                  "method":"GET",
+                  "header":[
+                     
+                  ],
+                  "url":{
+                     "raw":""
+                  }
+               },
+               "response":[
+                  
+               ]
+            },
+            {
+               "name":"User is NOT Found",
+               "request":{
+                  "method":"GET",
+                  "header":[
+                     
+                  ],
+                  "url":{
+                     "raw":"{{URL}}/api/users/23",
+                     "host":[
+                        "{{URL}}"
+                     ],
+                     "path":[
+                        "api",
+                        "users",
+                        "23"
+                     ]
+                  }
+               },
+               "response":[
+                  
+               ]
+            },
+            {
+               "name":"List <Resource>",
+               "event":[
+                  {
+                     "listen":"test",
+                     "script":{
+                        "exec":[
+                           "pm.test(\"Verify response time is less than 200ms\", function () {\r",
+                           "    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+                           "});\r",
+                           "\r",
+                           "pm.test(\"Verify status code is 200\", function () {\r",
+                           "    pm.response.to.have.status(200);\r",
+                           "});"
+                        ],
+                        "type":"text/javascript"
+                     }
+                  }
+               ],
+               "request":{
+                  "method":"GET",
+                  "header":[
+                     
+                  ],
+                  "url":{
+                     "raw":"{{URL}}/api/unknown",
+                     "host":[
+                        "{{URL}}"
+                     ],
+                     "path":[
+                        "api",
+                        "unknown"
+                     ]
+                  }
+               },
+               "response":[
+                  
+               ]
+            },
+            {
+               "name":"Single <Resource>",
+               "event":[
+                  {
+                     "listen":"test",
+                     "script":{
+                        "exec":[
+                           "pm.test(\"Verify response time is less than 200ms\", function () {\r",
+                           "    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+                           "});\r",
+                           "\r",
+                           "pm.test(\"Verify status code is 200\", function () {\r",
+                           "    pm.response.to.have.status(200);\r",
+                           "});"
+                        ],
+                        "type":"text/javascript"
+                     }
+                  }
+               ],
+               "request":{
+                  "method":"GET",
+                  "header":[
+                     
+                  ],
+                  "url":{
+                     "raw":"{{URL}}/api/unknown/2",
+                     "host":[
+                        "{{URL}}"
+                     ],
+                     "path":[
+                        "api",
+                        "unknown",
+                        "2"
+                     ]
+                  }
+               },
+               "response":[
+                  
+               ]
+            },
+            {
+               "name":"Delayed Response",
+               "event":[
+                  {
+                     "listen":"test",
+                     "script":{
+                        "exec":[
+                           "pm.test(\"Verify response time is less than 200ms\", function () {\r",
+                           "    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+                           "});\r",
+                           "\r",
+                           "pm.test(\"Verify status code is 200\", function () {\r",
+                           "    pm.response.to.have.status(200);\r",
+                           "});"
+                        ],
+                        "type":"text/javascript"
+                     }
+                  }
+               ],
+               "request":{
+                  "method":"GET",
+                  "header":[
+                     
+                  ],
+                  "url":{
+                     "raw":"https://reqres.in/api/users?delay=3",
+                     "protocol":"https",
+                     "host":[
+                        "reqres",
+                        "in"
+                     ],
+                     "path":[
+                        "api",
+                        "users"
+                     ],
+                     "query":[
+                        {
+                           "key":"delay",
+                           "value":"3"
+                        }
+                     ]
+                  }
+               },
+               "response":[
+                  
+               ]
+            }
+         ]
+      },
+      {
+         "name":"POST",
+         "item":[
+            {
+               "name":"User Registration",
+               "request":{
+                  "method":"POST",
+                  "header":[
+                     {
+                        "key":"Content-Type",
+                        "value":"application/json",
+                        "type":"text"
+                     }
+                  ],
+                  "body":{
+                     "mode":"raw",
+                     "raw":"{\n    \"email\": \"{{email}}\",\n    \"password\": \"{{password}}\"\n}"
+                  },
+                  "url":{
+                     "raw":"https://reqres.in/{{endpoint}}",
+                     "protocol":"https",
+                     "host":[
+                        "reqres",
+                        "in"
+                     ],
+                     "path":[
+                        "{{endpoint}}"
+                     ]
+                  }
+               },
+               "response":[
+                  
+               ]
+            },
+            {
+               "name":"Create",
+               "request":{
+                  "method":"POST",
+                  "header":[
+                     
+                  ],
+                  "body":{
+                     "mode":"raw",
+                     "raw":"{\r\n    \"name\": \"ABC\",\r\n    \"job\": \"QA\"\r\n}",
+                     "options":{
+                        "raw":{
+                           "language":"json"
+                        }
+                     }
+                  },
+                  "url":{
+                     "raw":"https://reqres.in/api/users",
+                     "protocol":"https",
+                     "host":[
+                        "reqres",
+                        "in"
+                     ],
+                     "path":[
+                        "api",
+                        "users"
+                     ]
+                  }
+               },
+               "response":[
+                  
+               ]
+            },
+            {
+               "name":"Register Unsuccessful",
+               "request":{
+                  "method":"POST",
+                  "header":[
+                     
+                  ],
+                  "body":{
+                     "mode":"raw",
+                     "raw":"{\r\n    \"email\": \"sydney@fife\"\r\n}",
+                     "options":{
+                        "raw":{
+                           "language":"json"
+                        }
+                     }
+                  },
+                  "url":{
+                     "raw":"https://reqres.in/api/register",
+                     "protocol":"https",
+                     "host":[
+                        "reqres",
+                        "in"
+                     ],
+                     "path":[
+                        "api",
+                        "register"
+                     ]
+                  }
+               },
+               "response":[
+                  
+               ]
+            },
+            {
+               "name":"Login Successful",
+               "event":[
+                  {
+                     "listen":"test",
+                     "script":{
+                        "exec":[
+                           "pm.test(\"Verify response time is less than 200ms\", function () {\r",
+                           "    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+                           "});\r",
+                           "\r",
+                           "pm.test(\"Verify status code is 200\", function () {\r",
+                           "    pm.response.to.have.status(200);\r",
+                           "});"
+                        ],
+                        "type":"text/javascript"
+                     }
+                  }
+               ],
+               "request":{
+                  "method":"POST",
+                  "header":[
+                     
+                  ],
+                  "body":{
+                     "mode":"raw",
+                     "raw":"{\r\n    \"email\": \"eve.holt@reqres.in\",\r\n    \"password\": \"cityslicka\"\r\n}",
+                     "options":{
+                        "raw":{
+                           "language":"json"
+                        }
+                     }
+                  },
+                  "url":{
+                     "raw":"https://reqres.in/api/login",
+                     "protocol":"https",
+                     "host":[
+                        "reqres",
+                        "in"
+                     ],
+                     "path":[
+                        "api",
+                        "login"
+                     ]
+                  }
+               },
+               "response":[
+                  
+               ]
+            },
+            {
+               "name":"Login Unsuccessful",
+               "event":[
+                  {
+                     "listen":"test",
+                     "script":{
+                        "exec":[
+                           "pm.test(\"Verify response time is less than 200ms\", function () {\r",
+                           "    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+                           "});\r",
+                           "\r",
+                           "pm.test(\"Verify status code is 200\", function () {\r",
+                           "    pm.response.to.have.status(200);\r",
+                           "});"
+                        ],
+                        "type":"text/javascript"
+                     }
+                  }
+               ],
+               "request":{
+                  "method":"POST",
+                  "header":[
+                     
+                  ],
+                  "body":{
+                     "mode":"raw",
+                     "raw":"{\r\n    \"email\": \"peter@klaven\"\r\n}",
+                     "options":{
+                        "raw":{
+                           "language":"json"
+                        }
+                     }
+                  },
+                  "url":{
+                     "raw":"https://reqres.in/api/login",
+                     "protocol":"https",
+                     "host":[
+                        "reqres",
+                        "in"
+                     ],
+                     "path":[
+                        "api",
+                        "login"
+                     ]
+                  }
+               },
+               "response":[
+                  
+               ]
+            }
+         ]
+      },
+      {
+         "name":"POST2",
+         "item":[
+            {
+               "name":"RegisterUser",
+               "event":[
+                  {
+                     "listen":"test",
+                     "script":{
+                        "exec":[
+                           "tests[\"Contains email\"] =responseBody.has(data.email);\r",
+                           "\r",
+                           "tests[\"Contains password\"] =responseBody.has(data[\"password\"]);"
+                        ],
+                        "type":"text/javascript"
+                     }
+                  }
+               ],
+               "request":{
+                  "method":"POST",
+                  "header":[
+                     {
+                        "key":"Content-Type",
+                        "value":"application/json",
+                        "type":"text"
+                     }
+                  ],
+                  "body":{
+                     "mode":"raw",
+                     "raw":"{\n    \"email\": \"{{email}}\",\n    \"password\": \"{{password}}\"\n}"
+                  },
+                  "url":{
+                     "raw":"https://reqres.in/{{endpoint}}",
+                     "protocol":"https",
+                     "host":[
+                        "reqres",
+                        "in"
+                     ],
+                     "path":[
+                        "{{endpoint}}"
+                     ]
+                  }
+               },
+               "response":[
+                  
+               ]
+            }
+         ]
+      }
+   ],
+   "event":[
+      {
+         "listen":"prerequest",
+         "script":{
+            "type":"text/javascript",
+            "exec":[
+               "console.log(\"Hello World..\");",
+               "",
+               "let URLVar = pm.variables.get(\"URL\");",
+               "console.log(\"Value for URL variable is : \"+URLVar);",
+               "",
+               "pm.variables.set(\"name\",\"POSTMAN\");",
+               "",
+               "console.log(pm.variables.get(\"name\"));",
+               "",
+               "let globalVar = pm.globals.get(\"Env\");",
+               "",
+               "console.log(globalVar);"
+            ]
+         }
+      },
+      {
+         "listen":"test",
+         "script":{
+            "type":"text/javascript",
+            "exec":[
+               ""
+            ]
+         }
+      }
+   ],
+   "variable":[
+      {
+         "key":"URL",
+         "value":"https://reqres.in"
+      }
+   ]
+}
